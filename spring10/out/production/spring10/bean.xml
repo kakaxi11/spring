@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--我们可以将这个bean理解为我们的javaBean，其中两个property标签即表示给IntrduceDemo类中的name和age属性赋值！-->
+    <bean id="IntrduceDemo" class="com.test1.IntrduceDemo">
+<!--        在这里进行对象的装配-->
+        <property name="name" value="小向"/>
+        <property name="aihao" value="足球"/>
+        <property name="age" value="24"/>
+        <property name="money" value="3000"/>
+    </bean>
+</beans>
