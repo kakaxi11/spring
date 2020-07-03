@@ -1,7 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="970edab8-27bf-4d59-b26c-030b5db30b33" name="Default Changelist" comment="" />
+    <list default="true" id="970edab8-27bf-4d59-b26c-030b5db30b33" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../jdbc/.idea/jdbc.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jdbc/mybatis/mybatis.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jdbc/spring-data-jdbc/spring-data-jdbc.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jdbc/untitled/untitled.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myba/.idea/myba.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled11/untitled11.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled12/.idea/untitled12.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled13/untitled13.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-data-jdbc/src/main/java/com/itranswarp/learnjava/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-data-jdbc/src/main/java/com/itranswarp/learnjava/AppConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-data-jdbc/target/classes/com/itranswarp/learnjava/AppConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-data-jdbc/target/classes/com/itranswarp/learnjava/AppConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-data-jdbc/target/classes/com/itranswarp/learnjava/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-data-jdbc/target/classes/com/itranswarp/learnjava/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-data-jdbc/testdb.lck" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-data-jdbc/testdb.lck" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-data-jdbc/testdb.log" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-data-jdbc/testdb.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-data-jdbc/testdb.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-data-jdbc/testdb.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-data-jdbc/testdb.script" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-data-jdbc/testdb.script" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring10/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring10/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring10/out/production/spring10/bean.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring10/out/production/spring10/bean.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring10/out/production/spring10/com/test1/IntrduceDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/../spring10/out/production/spring10/com/test1/IntrduceDemo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring10/out/production/spring10/com/test1/testMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/../spring10/out/production/spring10/com/test1/testMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring10/src/bean.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring10/src/bean.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring10/src/com/test1/IntrduceDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring10/src/com/test1/IntrduceDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring10/src/com/test1/testMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring10/src/com/test1/testMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled5" beforeDir="false" afterPath="$PROJECT_DIR$/../untitled5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HelloServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HelloServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled9/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../untitled9/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ut06http/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ut06http/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,7 +42,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1dWokU870wJ4VCjcemkvz4vjXKF" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -22,12 +54,13 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Java" />
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -70,7 +103,9 @@
       <workItem from="1592551154379" duration="19000" />
       <workItem from="1592551350483" duration="34000" />
       <workItem from="1592551409063" duration="638000" />
-      <workItem from="1592552123646" duration="4629000" />
+      <workItem from="1592552123646" duration="6632000" />
+      <workItem from="1592637507466" duration="2474000" />
+      <workItem from="1593760108818" duration="1482000" />
     </task>
     <servers />
   </component>
@@ -82,33 +117,41 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="179" y="269" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592552604612" />
-    <state width="1403" height="254" key="GridCell.Tab.0.bottom" timestamp="1592554392954">
+    <state x="714" y="361" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog" timestamp="1592637664496">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1403" height="254" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1592554392954" />
-    <state width="1403" height="254" key="GridCell.Tab.0.center" timestamp="1592554392953">
+    <state x="714" y="361" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592637664496" />
+    <state width="1530" height="368" key="GridCell.Tab.0.bottom" timestamp="1593760318819">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1403" height="254" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1592554392953" />
-    <state width="1403" height="254" key="GridCell.Tab.0.left" timestamp="1592554392953">
+    <state width="1530" height="368" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1593760318819" />
+    <state width="1530" height="368" key="GridCell.Tab.0.center" timestamp="1593760318819">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1403" height="254" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1592554392953" />
-    <state width="1403" height="254" key="GridCell.Tab.0.right" timestamp="1592554392953">
+    <state width="1530" height="368" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1593760318819" />
+    <state width="1530" height="368" key="GridCell.Tab.0.left" timestamp="1593760318818">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1403" height="254" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1592554392953" />
-    <state x="432" y="135" key="SettingsEditor" timestamp="1592550715505">
+    <state width="1530" height="368" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1593760318818" />
+    <state width="1530" height="368" key="GridCell.Tab.0.right" timestamp="1593760318819">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="432" y="135" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1592550715505" />
-    <state x="645" y="385" key="com.intellij.ide.util.TipDialog" timestamp="1592551164669">
+    <state width="1530" height="368" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1593760318819" />
+    <state x="356" y="164" key="SettingsEditor" timestamp="1592637744696">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="645" y="385" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592551164669" />
-    <state x="380" y="279" key="new project wizard" timestamp="1592555989165">
+    <state x="356" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1592637744696" />
+    <state x="645" y="385" key="com.intellij.ide.util.TipDialog" timestamp="1592637551796">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="380" y="279" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1592555989165" />
+    <state x="645" y="385" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592637551796" />
+    <state x="565" y="441" key="new project wizard" timestamp="1592642011462">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="565" y="441" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1592642011462" />
+    <state x="795" y="336" width="672" height="678" key="search.everywhere.popup" timestamp="1593760296972">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="795" y="336" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1593760296972" />
   </component>
 </project>
