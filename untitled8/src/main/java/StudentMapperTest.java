@@ -24,7 +24,7 @@ public class StudentMapperTest {
     }
     @Test
     //返回Student对象类型的数组
-     public  Student  testSelectList() {
+     public  Student  testSelectList(int index) {
         SqlSession sqlSession = null;
         try {
             sqlSession = sqlSessionFactory.openSession();
@@ -41,7 +41,7 @@ public class StudentMapperTest {
 //            return students;
 //            System.out.println("下面打印单个ID查询数据");
             //根据id查询单条记录的接口
-            Student a = sqlSession.selectOne("selectByPrimaryKey",3);
+            Student a = sqlSession.selectOne("selectByPrimaryKey",index);
 //            int aa = a.getId();
          return  a;
 //            return  aa;
@@ -90,24 +90,31 @@ public class StudentMapperTest {
 //            return ww;
         }
     }
+    @Test
+    public void updateUserinfo(String name,String email,String phone,int id) {
+        SqlSession sqlSession = null;
+        try {
+            sqlSession = sqlSessionFactory.openSession();
+
+            Student a = new Student();
+            a.setEmail(email);
+            a.setName(name);
+            a.setPhone(phone);
+            a.setStudentId(id);
+
+
+            int result = sqlSession.update("updateByPrimaryKey",a);
+            System.out.println("操作成功"+email+name+phone+id);
+            sqlSession.commit();
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            if (sqlSession != null) {
+                sqlSession.close();
+            }
+        }
+
+    }
 }
 
-//    @Test
-//    public void selectId() {
-//        SqlSession sqlSession = null;
-//        try {
-//            sqlSession = sqlSessionFactory.openSession();
-//            //泛型数据数组 Student类型
-//            Student a = sqlSession.selectOne("selectByPrimaryKey",5);
-//
-//        } catch (Exception e) {
-//            e.printStackTrace();
-//
-//        } finally {
-//            if (sqlSession != null) {
-//                sqlSession.close();
-//            }
-//        }
-//    }
-//}
 

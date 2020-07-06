@@ -55,9 +55,9 @@ public class Student {
 
 
     //该方法可获得当前对象的基本信息
-    public String getInfo() {
-        return this.studentId +" " + this.name +"  " + this.phone+"  " + this.sex+" " + this.email;
-    }
+//    public String getInfo() {
+//        return this.studentId +" " + this.name +"  " + this.phone+"  " + this.sex+" " + this.email;
+//    }
 //    public Byte getSex() {
 //        return  this.sex;
 //    }
@@ -67,6 +67,11 @@ public class Student {
     public  int getId(){
         return this.studentId;
     }
+    public  String getPhone(){
+        return this.phone;
+    }
+    public  int getSex(){return  this.sex;}
+    public  String getEmail(){return  this.email;}
 //    写上对应的get和set方法就能查询到数据了。
 //    .MAPPERxml文件 这是一个用来做sql语句查询的映射文件，sql语句就写到下面
 //     这里可以写入其他sql语句 ， 例如select * from student
