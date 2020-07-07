@@ -22,28 +22,32 @@ public class StudentMapperTest {
             e.printStackTrace();
         }
     }
+
     @Test
     //返回Student对象类型的数组
-     public  Student  testSelectList(int index) {
+    public  List<Student> testSelectList(int index) {
         SqlSession sqlSession = null;
         try {
             sqlSession = sqlSessionFactory.openSession();
             //泛型数据数组 Student类型 获得全部数据的接口
             System.out.println("查询成功");
-//            List<Student> students = sqlSession.selectList("selectAll");
-//
-//            for (int i = 0; i < students.size(); i++) {
-//
-//                //前面一个是List容器数组的方法，后面一个是对象自带的方法，用于获得该对象的名字。
-//
-//                System.out.println(students.get(i).getInfo());
-//            }
-//            return students;
+            List<Student> students = sqlSession.selectList("selectAll");
+
+            //index为获取指定条数据，students.size()为获取全部数据
+            for (int i = 0; i < index; i++) {
+
+                //前面一个是List容器数组的方法，后面一个是对象自带的方法，用于获得该对象的名字。
+
+                System.out.println(students.get(i).getInfo());
+            }
+
+
+            return students;
 //            System.out.println("下面打印单个ID查询数据");
             //根据id查询单条记录的接口
-            Student a = sqlSession.selectOne("selectByPrimaryKey",index);
-//            int aa = a.getId();
-         return  a;
+//            Student a = sqlSession.selectOne("selectByPrimaryKey", index);
+////            int aa = a.getId();
+//            return a;
 //            return  aa;
 //            System.out.println(a.getInfo());
 //        sqlSession.selectOne("updateByPrimaryKey",)
@@ -76,12 +80,10 @@ public class StudentMapperTest {
 //                sqlSession.commit();
 
 
-
         } catch (Exception e) {
             e.printStackTrace();
-            return  null;
-        }
-        finally {
+            return null;
+        } finally {
 //            if (sqlSession != null) {
 //                sqlSession.close();
 //            }
@@ -90,8 +92,9 @@ public class StudentMapperTest {
 //            return ww;
         }
     }
+
     @Test
-    public void updateUserinfo(String name,String email,String phone,int id) {
+    public void updateUserinfo(String name, String email, String phone, int id) {
         SqlSession sqlSession = null;
         try {
             sqlSession = sqlSessionFactory.openSession();
@@ -103,8 +106,55 @@ public class StudentMapperTest {
             a.setStudentId(id);
 
 
-            int result = sqlSession.update("updateByPrimaryKey",a);
-            System.out.println("操作成功"+email+name+phone+id);
+            int result = sqlSession.update("updateByPrimaryKey", a);
+            System.out.println("操作成功" + email + name + phone + id);
+            sqlSession.commit();
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            if (sqlSession != null) {
+                sqlSession.close();
+            }
+        }
+
+    }
+
+
+    @Test
+    public void insertUser(int id,String name, String phone, String email,int sex) {
+        SqlSession sqlSession = null;
+        try {
+            //记得打开sqlssionFactory才能进行调用mybatis的 jdbc操作
+            sqlSession = sqlSessionFactory.openSession();
+            Student b = new Student();
+            b.setStudentId(id);
+            b.setName(name);
+            b.setPhone(phone);
+            b.setEmail(email);
+            b.setSex(sex);
+//插入数据时如果只想插入指定几列的数据必须先声明指定列,在mapper文件里的数据也有所区别，只需在values里写(#{id},#{name})这种形式即可
+            int result2 = sqlSession.insert("insertObj", b);
+            System.out.println("新增成功" + email + name + phone);
+            sqlSession.commit();
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            if (sqlSession != null) {
+                sqlSession.close();
+            }
+        }
+
+    }
+
+    @Test
+    public void deleteU(int id) {
+        SqlSession sqlSession = null;
+        try {
+            //记得打开sqlssionFactory才能进行调用mybatis的 jdbc操作
+            sqlSession = sqlSessionFactory.openSession();
+//插入数据时如果只想插入指定几列的数据必须先声明指定列,在mapper文件里的数据也有所区别，只需在values里写(#{id},#{name})这种形式即可
+            int result2 = sqlSession.delete("deleteByPrimaryKey", id);
+            System.out.println("删除成功");
             sqlSession.commit();
         } catch (Exception e) {
             e.printStackTrace();
@@ -116,5 +166,4 @@ public class StudentMapperTest {
 
     }
 }
-
 

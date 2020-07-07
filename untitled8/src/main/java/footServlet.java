@@ -1,6 +1,8 @@
+import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import com.homejim.mybatis.entity.Student;
+import com.mysql.cj.xdevapi.JsonArray;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -43,12 +45,35 @@ public class footServlet extends HttpServlet {
 //        因为返回的说json，所以前端还需要先从json转为字符串，再转为数组，现在能在前端拿到数据并处理了，只是转化为数组时还是有点问题/
         StudentMapperTest s = new StudentMapperTest();
         s.init();
-        Student ss1 = s.testSelectList(1);
-        Student ss2 = s.testSelectList(2);
+//        Student ss1 = s.testSelectList(1);
+//        Student ss2 = s.testSelectList(2);
 //        Student ss3 = s.testSelectList(5);
-        Student ss5 = s.testSelectList(5);
+        var ss5 = s.testSelectList(10);
 //
-//        JSONObject object = new JSONObject();
+        JSONArray  ary = new JSONArray();
+
+//        JSONArray json = JSONArray.parseArray(ss5);
+        for (int i = 0;i<10;i++){
+
+        Student a = ss5.get(i);
+    JSONObject object = new JSONObject();
+        object.put("id",a.getId());
+        object.put("name",a.getName());
+        object.put("phone",a.getPhone());
+        object.put("email",a.getEmail());
+        object.put("sex",a.getSex());
+        ary.add(object);
+        System.out.println(a.getInfo()+"这是serv数据");
+
+//        object.put("id",a.getId());
+//        object.put("name",a.getName());
+//        object.put("phone",a.getPhone());
+//        object.put("email",a.getEmail());
+
+//                先转换为数据，get拿到，
+
+        }
+//        String jsonList = JSON.toJSONString(ary);
 //        //string
 //        object.put("string","string");
 //        //int
@@ -78,8 +103,6 @@ public class footServlet extends HttpServlet {
 
 
         //改为数据库里面的数据
-
-        JSONArray jsonArray = new JSONArray();
 //        // json对象1
 //        JSONObject json1 = new JSONObject();
 //        json1.put("name","小王");
@@ -94,22 +117,20 @@ public class footServlet extends HttpServlet {
 //        json2.put("phone","185464648");
 //        json2.put("email","aojew@.qq.com");
 //        json1.put("sex",0);
-
-
         // 将json对象添加到json数组
-        jsonArray.add(ss1);
-        jsonArray.add(ss2);
-//        jsonArray.add(ss3);
-        jsonArray.add(ss5);
+//        jsonArray.add(ss1);
+//        jsonArray.add(ss2);
+////        jsonArray.add(ss3);
+//        jsonArray.add(ss5);
 //        通过id查询得到的对象，每一个get方法就是该对象的一个键值对，键是get后面的那个单词，必须每个属性都要有对应的get方法，才能把每个属性都一行一行的显示出来。
-
-
-
         PrintWriter pw = resp.getWriter();
 //        String resJSON = ss1.getInfo();
-
         //再把json对象转为字符串返回给前端,前端才能识别。
-        pw.write(jsonArray.toString());
+
+//        管他任何数据好像最终都要变成json字符串格式进行前后端交互
+        String src =  JSON.toJSONString(ary);
+        pw.write(src);
+
         pw.flush();
     }
 }

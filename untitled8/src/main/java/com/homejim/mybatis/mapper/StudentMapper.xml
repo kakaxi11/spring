@@ -37,8 +37,8 @@
     where student_id=#{studentId, jdbcType=INTEGER}
   </delete>
     <insert id="insertObj"  parameterType="com.homejim.mybatis.entity.Student">
-    insert into  student(student_id,name,phone,email)
-    values (#{studentId},#{name}, #{phone},#{email})
+    insert into  student(student_id,name,phone,email,sex)
+    values (#{studentId},#{name}, #{phone},#{email},#{sex})
   </insert>
 </mapper>
 

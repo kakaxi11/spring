@@ -11,7 +11,7 @@ public class Student {
 
     private String email;
 
-    private Byte sex;
+    private int sex;
 
     private Byte locked;
 
@@ -37,7 +37,7 @@ public class Student {
         this.email = email == null ? null : email.trim();
     }
 
-    public void setSex(Byte sex) {
+    public void setSex(int sex) {
         this.sex = sex;
     }
 
@@ -55,9 +55,9 @@ public class Student {
 
 
     //该方法可获得当前对象的基本信息
-//    public String getInfo() {
-//        return this.studentId +" " + this.name +"  " + this.phone+"  " + this.sex+" " + this.email;
-//    }
+    public String getInfo() {
+        return this.studentId +" " + this.name +"  " + this.phone+"  " + this.sex+" " + this.email;
+    }
 //    public Byte getSex() {
 //        return  this.sex;
 //    }
