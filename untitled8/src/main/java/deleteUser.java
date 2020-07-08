@@ -17,7 +17,7 @@ import java.io.*;
 import java.util.Arrays;
 import java.util.List;
 
-//删除用户的接口
+//删除用户的接口,使用getparamater
 
 @WebServlet(urlPatterns = "/delet")
 public class deleteUser extends HttpServlet {
@@ -39,19 +39,24 @@ public class deleteUser extends HttpServlet {
 //        String email = req.getParameter("email");
 //        String phone = req.getParameter("phone");
 
+//        下面这一行是获取请求头的数据
+//        int id = req.getIntHeader("id");
+
+        //因为paramas获得的数据是string类型，所有要进行一层转换
+        int id = Integer.parseInt(req.getParameter("id"));
 //        getParameter应该只能拿url后面拼接的值，paramas部分，不能拿post的
-
-        StringBuffer sb = new StringBuffer();
-        InputStream is = req.getInputStream();
-        InputStreamReader isr = new InputStreamReader(is);
-        BufferedReader br = new BufferedReader(isr);
-        String s1 = "" ;
-        while((s1=br.readLine())!=null){
-            sb.append(s1) ;
-        }
-        String str =sb.toString();
-
-        System.out.println(str);
+        System.out.println(id);
+//        StringBuffer sb = new StringBuffer();
+//        InputStream is = req.getInputStream();
+//        InputStreamReader isr = new InputStreamReader(is);
+//        BufferedReader br = new BufferedReader(isr);
+//        String s1 = "" ;
+//        while((s1=br.readLine())!=null){
+//            sb.append(s1) ;
+//        }
+//        String str =sb.toString();
+//
+//        System.out.println(str);
         //POST方法 通过getinputStream拿到前台传递的数据,好像不能getparamt
 
         //getint()表示获取整形数据类型， getparamater获取字符串类型
@@ -76,9 +81,9 @@ public class deleteUser extends HttpServlet {
 //
 //
 //        //将str转换为对象
-        var a = JSONObject.parseObject(str);
-        a.getInteger("id");
-        s.deleteU(a.getIntValue("id"));
+//        var a = JSONObject.parseObject(str);
+//        a.getInteger("id");
+        s.deleteU(id);
 //
 //
 //

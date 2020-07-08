@@ -24,16 +24,7 @@
       <change beforePath="$PROJECT_DIR$/example.log.3" beforeDir="false" afterPath="$PROJECT_DIR$/example.log.3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example.log.4" beforeDir="false" afterPath="$PROJECT_DIR$/example.log.4" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example.log.5" beforeDir="false" afterPath="$PROJECT_DIR$/example.log.5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/HelloServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HelloServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/StudentMapperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/StudentMapperTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/homejim/mybatis/entity/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/homejim/mybatis/entity/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/homejim/mybatis/mapper/StudentMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/homejim/mybatis/mapper/StudentMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/footServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/footServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/HelloServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/HelloServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/StudentMapperTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/StudentMapperTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/homejim/mybatis/entity/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/homejim/mybatis/entity/Student.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/homejim/mybatis/mapper/StudentMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/homejim/mybatis/mapper/StudentMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/footServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/footServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/deleteUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deleteUser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../untitled9/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../untitled9/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ut06http/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ut06http/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -150,7 +141,8 @@
       <workItem from="1593760108818" duration="10588000" />
       <workItem from="1594003417678" duration="17760000" />
       <workItem from="1594085774062" duration="15491000" />
-      <workItem from="1594116576116" duration="1975000" />
+      <workItem from="1594116576116" duration="2863000" />
+      <workItem from="1594171921350" duration="8953000" />
     </task>
     <servers />
   </component>
@@ -174,22 +166,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="850" y="572" width="441" height="294" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1594020194362" />
-    <state width="1342" height="135" key="GridCell.Tab.0.bottom" timestamp="1594118559234">
+    <state width="1342" height="135" key="GridCell.Tab.0.bottom" timestamp="1594205092754">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1342" height="135" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594118559234" />
-    <state width="1342" height="135" key="GridCell.Tab.0.center" timestamp="1594118559234">
+    <state width="1342" height="135" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594205092754" />
+    <state width="1342" height="135" key="GridCell.Tab.0.center" timestamp="1594205092754">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1342" height="135" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594118559234" />
-    <state width="1342" height="135" key="GridCell.Tab.0.left" timestamp="1594118559233">
+    <state width="1342" height="135" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594205092754" />
+    <state width="1342" height="135" key="GridCell.Tab.0.left" timestamp="1594205092753">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1342" height="135" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594118559233" />
-    <state width="1342" height="135" key="GridCell.Tab.0.right" timestamp="1594118559234">
+    <state width="1342" height="135" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594205092753" />
+    <state width="1342" height="135" key="GridCell.Tab.0.right" timestamp="1594205092754">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1342" height="135" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594118559234" />
+    <state width="1342" height="135" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594205092754" />
     <state width="1342" height="270" key="GridCell.Tab.1.bottom" timestamp="1594033094856">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -210,10 +202,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="356" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1592637744696" />
-    <state x="645" y="385" key="com.intellij.ide.util.TipDialog" timestamp="1594116581244">
+    <state x="645" y="385" key="com.intellij.ide.util.TipDialog" timestamp="1594171921496">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="645" y="385" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594116581244" />
+    <state x="645" y="385" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594171921496" />
     <state x="565" y="441" key="new project wizard" timestamp="1592642011462">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
